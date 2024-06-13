@@ -1,37 +1,21 @@
-package main // Pacote principal da aplicação
-
-import "fmt" // Pacote externo para print
-import "reflect" // Pacote para descobrir o tipo das variaveis
+package main // Indica que é o pacote principal da aplicacao e seu codigo deve comecar por ele.
+import "fmt" // Pacote de formatacao que contem as classes de imprimir e formatar o texto
 
 func main() { // Função da aplicação principal
 
-	// Tipos da variaveis:
-	// O go não deixa declarar uma variavel e não atribuir uso a ela, ele não compila
-	// Tipo String
-	// Quando não for atribuido valor da variavel ele assumira o valor vazio
-	var nome string = "Lucas"
-	nome2 := "Emilly" // Também pode ser declarada dessa forma
-
-	//Tipo Float64 ou Float32 bits para numeros maiores ou menores
-	// Quando não for atribuido valor da variavel ele assumira o valor 0
-	var versao float32 = 1.1
-	var versao2 float64 = 1.232323113131
-	versao3 := 1.223
-
-	// Tipo Inteiro
-	// Quando não for atribuido valor da variavel ele assumira o valor 0
-	var idade int = 18 
-	idade2 := 20
-
-	fmt.Println("Olá, sr. ", nome, "sua idade é", idade)
-	fmt.Println("Olá, sr. ", nome2, "sua idade é", idade2)
-
-	
-	fmt.Println("Esse programa está na versão", versao)
-	fmt.Println("A versão extendida desse programa está na", versao2)
-	fmt.Println("A versão extendida desse programa está na", versao3)
 
 
-	fmt.Println("O tipo da variavel nome é", reflect.TypeOf(nome))
-	fmt.Println("O tipo da variavel idade é", reflect.TypeOf(idade))
+	//Variaveis
+	//int, string, float32, float64
+	// Quando nao atribuimos valor a uma variavel, o go entende que seu valor é 0 ou um caracter vazio
+	// O go nao deixa declarar uma variavel e nao usa-la, logo ele nao compila até a variavel ser usada
+
+	var nome string = "Lucas" // Variavel declarada de forma explicita e tipada
+	var versao float32 = 1.1 // Float possui de 32bits ou de 64bits para numeros maiores
+	var idade int = 32 // Variavel do tipo inteiro
+	fmt.Println("Ola, sr.", nome, "sua idade é ", idade) // , usada para concatenar
+	fmt.Println("Este programa está na versao", versao, "com sua idade", idade1)
+
+	var idade1 int // Quando nao atribuimos valor a variavel o go entende que o valor é 0
+
 }
