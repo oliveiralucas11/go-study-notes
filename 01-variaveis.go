@@ -3,9 +3,7 @@ import "fmt" // Pacote de formatacao que contem as classes de imprimir e formata
 import "reflect" // Habilita a funcao typeof para descobrir quais sao os tipos da variaveis
 
 func main() { // Função da aplicação principal
-
-
-
+	
 	//Variaveis
 	//int, string, float32, float64
 	// Quando nao atribuimos valor a uma variavel, o go entende que seu valor é 0 ou um caracter vazio
